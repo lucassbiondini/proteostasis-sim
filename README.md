@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776ab.svg)](pyproject.toml)
 [![R 4.3+ Cross-Validated](https://img.shields.io/badge/R-4.3%2B%20survival%2Fcmprsk-276DC3.svg)](scripts/validate_python_vs_r.R)
-[![DOI]([https://zenodo.org/badge/DOI/10.5281/zenodo.24575804.svg](https://doi.org/10.5281/zenodo.24575804)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24575804.svg)](https://doi.org/10.5281/zenodo.24575804)
 
 **Multiscale *in silico* framework for separating genuine physiological antagonism (adaptive cellular hormesis) from competing-risks statistical masking in genetic proteinopathies**, empirically calibrated from human hepatic transcriptomics (*SERPINA1* PiZZ archetype).
 
