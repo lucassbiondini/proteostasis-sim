@@ -10,7 +10,7 @@ tags:
   - SERPINA1
 authors:
   - name: Lucas Silveira Biondini
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-5753-1000
     affiliation: 1
 affiliations:
   - name: Instituto de Ciências Biológicas, Universidade Federal de Minas Gerais (ICB/UFMG), Belo Horizonte, Brazil
