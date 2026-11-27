@@ -1,41 +1,15 @@
 cff-version: 1.2.0
 message: "If you use proteostasis-sim in your research, please cite both the software archive and the accompanying article."
 title: "proteostasis-sim: Multiscale in silico framework for physiological antagonism and competing risks in genetic proteinopathies"
-version: 0.2.0
-date-released: 2026-11-26
+version: 0.2.1
+date-released: 2026-11-27
 license: MIT
 repository-code: "https://github.com/lucassbiondini/proteostasis-sim"
 url: "https://github.com/lucassbiondini/proteostasis-sim"
-doi: "10.5281/zenodo.<ZENODO_ID>"
+orcid: "https://orcid.org/0000-0002-5753-1000"
 abstract: >-
   proteostasis-sim is an open-source, three-scale in silico modeling platform
   coupling nonlinear intracellular proteostasis-bioenergetics (5-ODE/SDE),
   spatial 2D hybrid agent-based and reaction-diffusion PDE tissue remodeling,
   and shared-frailty competing-risks survival analysis (Aalen-Johansen CIF,
-  Cox CSH, Fine-Gray IPCW, and counterfactual antagonism index Phi), empirically
-  anchored to human hepatic transcriptomics from NCBI GEO.
-authors:
-  - family-names: "Biondini"
-    given-names: "Lucas Silveira"
-    email: "lucasbiondini@ufmg.br"
-    affiliation: "Instituto de Ciências Biológicas (ICB), Universidade Federal de Minas Gerais (UFMG)"
-    orcid: "https://orcid.org/<ORCID_ID>"
-keywords:
-  - multiscale modeling
-  - proteostasis
-  - hormesis
-  - SERPINA1
-  - alpha-1 antitrypsin deficiency
-  - competing risks
-  - Fine-Gray
-  - agent-based modeling
-  - transcriptomics
-preferred-citation:
-  type: article
-  title: "Multiscale In Silico Modeling of Physiological Antagonism and Competing Risks in Genetic Proteinopathies: Empirical Calibration from Human Hepatic Transcriptomics"
-  authors:
-    - family-names: "Biondini"
-      given-names: "Lucas Silveira"
-      affiliation: "Instituto de Ciências Biológicas (ICB), Universidade Federal de Minas Gerais (UFMG)"
-  year: 2026
-  journal: "Journal of Theoretical Biology"
+  Cox CSH, Fine
