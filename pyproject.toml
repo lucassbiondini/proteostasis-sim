@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proteostasis-sim"
+version = "0.2.0"
+description = "Multiscale in silico framework for physiological antagonism, hormesis, and competing risks in genetic proteinopathies"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Lucas Silveira Biondini", email = "lucasbiondini@ufmg.br"}
+]
+keywords = ["systems-biology", "proteostasis", "hormesis", "competing-risks", "multiscale-modeling", "SERPINA1"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.11",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+omics = ["GEOparse>=2.0.3", "decoupler>=1.6.0"]
+dev = ["pytest>=7.4", "pytest-cov>=4.1", "ruff>=0.4"]
+
+[project.scripts]
+proteostasis-calibrate = "proteostasis_sim.omics_geo:main_cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"

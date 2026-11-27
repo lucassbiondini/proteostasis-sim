@@ -1,0 +1,22 @@
+name: proteostasis-sim
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy>=1.24
+  - scipy>=1.11
+  - pandas>=2.0
+  - matplotlib>=3.7
+  - requests>=2.31
+  - pytest>=7.4
+  - r-base>=4.3
+  - r-survival
+  - r-cmprsk
+  - r-mstate
+  - r-jsonlite
+  - pip
+  - pip:
+      - GEOparse>=2.0.3
+      - -e .

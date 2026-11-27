@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: JOSS Software Paper & Manuscript Repository
+    url: https://github.com/lucassbiondini/proteostasis-sim
+    about: View documentation, citation metadata (CITATION.cff), and reproducibility scripts.
