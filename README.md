@@ -147,7 +147,7 @@ If you use `proteostasis-sim` in your research, please cite the software archive
   year         = {2026},
   version      = {0.2.0},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.<ZENODO_ID>},
+  doi          = {10.5281/zenodo.24575804},
   url          = {https://github.com/lucassbiondini/proteostasis-sim}
 }
 ```
