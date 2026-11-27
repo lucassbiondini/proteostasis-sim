@@ -13,14 +13,19 @@
 ## Overview
 
 `proteostasis-sim` couples three mechanistic scales strictly bottom-up without hardcoded inter-scale shortcuts:
+### Empirical Omics Anchoring & WP1 (`src/proteostasis_sim/omics_geo.py`, `wp1_molecular.py`)
 
-1. **Empirical Omics Anchoring & WP1 (`src/proteostasis_sim/omics_geo.py`, `wp1_molecular.py`):**
-   - Queries and scores transcription factor regulons (`HSF1`, `HIF1A`, `NFE2L2`, `ATF4`) across four public human hepatic NCBI GEO datasets (`GSE66076`, `GSE41666`, `GSE18494`, `GSE31286`), anchoring stress-response turnover to $\delta_H = 0.3825\,\mathrm{h}^{-1}$ ($t_{1/2} = 1.81\,\mathrm{h}$).
-   - Solves a stiff 5-ODE/SDE intracellular system tracking misfolded monomers ($M$), toxic aggregates ($A$), adaptive proteostasis capacity ($H$), oxidative damage ($D$), and mitochondrial ATP reserve ($B$), capturing saddle-node bistability ($E \in [0.15, 1.55]$), intermittent pulsatile chronobiology (45% duty cycle), global LHS-PRCC sensitivity, and Bliss Independence drug synergy.
-2. **WP2 Spatial Tissue Remodeling (`src/proteostasis_sim/wp2_tissue.py`):**
-   - Embeds log-normally heterogeneous hepatocytes onto a 2D lattice coupled to an explicit reaction-diffusion profibrotic cytokine PDE, bystander ROS injury, MMP-mediated ECM remodeling, and replicative senescence, fusing single-cell and tissue failure times via right-censored Weibull MLE.
-3. **WP3 Shared-Frailty Competing-Risks Causal Audit (`src/proteostasis_sim/wp3_biostats.py`):**
-   - Simulates virtual cohorts under **Hormesis** and **Null Masking** counterfactuals, computing exact Aalen–Johansen cumulative incidence (CIF), Cox cause-specific hazards (CSH), exact $O(N\log N)$ Fine–Gray subdistribution hazards (IPCW), and the counterfactual genuine-antagonism index ($\Phi$).
+Queries and scores transcription factor regulons (`HSF1`, `HIF1A`, `NFE2L2`, `ATF4`) across four public human hepatic NCBI GEO datasets (`GSE66076`, `GSE41666`, `GSE18494`, `GSE31286`), anchoring stress-response turnover to $\delta_H = 0.3825\ \text{h}^{-1}$ ($t_{1/2} = 1.81\ \text{h}$).
+
+Solves a stiff 5-ODE/SDE intracellular system tracking misfolded monomers ($M$), toxic aggregates ($A$), adaptive proteostasis capacity ($H$), oxidative damage ($D$), and mitochondrial ATP reserve ($B$), capturing saddle-node bistability ($E \in [0.15, 1.55]$), intermittent pulsatile chronobiology (45% duty cycle), global LHS-PRCC sensitivity, and Bliss Independence drug synergy.
+
+### WP2 Spatial Tissue Remodeling (`src/proteostasis_sim/wp2_tissue.py`)
+
+Embeds log-normally heterogeneous hepatocytes onto a 2D lattice coupled to an explicit reaction-diffusion profibrotic cytokine PDE, bystander ROS injury, MMP-mediated ECM remodeling, and replicative senescence, fusing single-cell and tissue failure times via right-censored Weibull MLE.
+
+### WP3 Shared-Frailty Competing-Risks Causal Audit (`src/proteostasis_sim/wp3_biostats.py`)
+
+Simulates virtual cohorts under Hormesis and Null Masking counterfactuals, computing exact Aalen–Johansen cumulative incidence (CIF), Cox cause-specific hazards (CSH), exact $O(N \log N)$ Fine–Gray subdistribution hazards (IPCW), and the counterfactual genuine-antagonism index ($\Phi$).
 
 ---
 
